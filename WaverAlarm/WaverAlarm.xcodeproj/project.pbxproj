@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941D91171905075B00B52795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D91161905075B00B52795 /* Foundation.framework */; };
+		941D91191905075B00B52795 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D91181905075B00B52795 /* CoreGraphics.framework */; };
+		941D911B1905075B00B52795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D911A1905075B00B52795 /* UIKit.framework */; };
+		941D91211905075B00B52795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941D911F1905075B00B52795 /* InfoPlist.strings */; };
+		941D91231905075B00B52795 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 941D91221905075B00B52795 /* main.m */; };
+		941D91271905075B00B52795 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 941D91261905075B00B52795 /* AppDelegate.m */; };
+		941D91291905075B00B52795 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941D91281905075B00B52795 /* Images.xcassets */; };
+		941D91301905075B00B52795 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D912F1905075B00B52795 /* XCTest.framework */; };
+		941D91311905075B00B52795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D91161905075B00B52795 /* Foundation.framework */; };
+		941D91321905075B00B52795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941D911A1905075B00B52795 /* UIKit.framework */; };
+		941D913A1905075B00B52795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941D91381905075B00B52795 /* InfoPlist.strings */; };
+		941D913C1905075B00B52795 /* WaverAlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941D913B1905075B00B52795 /* WaverAlarmTests.m */; };
+		942E89D7191601EE001E9089 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89CE191601EE001E9089 /* MainViewController.m */; };
+		942E89D8191601EE001E9089 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942E89CF191601EE001E9089 /* MainViewController.xib */; };
+		942E89D9191601EE001E9089 /* AlarmSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89D2191601EE001E9089 /* AlarmSettingViewController.m */; };
+		942E89DA191601EE001E9089 /* AlarmSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942E89D3191601EE001E9089 /* AlarmSettingViewController.xib */; };
+		942E89DB191601EE001E9089 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89D6191601EE001E9089 /* Button.m */; };
+		942E89E3191601FF001E9089 /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89DE191601FF001E9089 /* Alarm.m */; };
+		942E89E4191601FF001E9089 /* CurrentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89E0191601FF001E9089 /* CurrentTime.m */; };
+		942E89E5191601FF001E9089 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89E2191601FF001E9089 /* User.m */; };
+		942E89E919160218001E9089 /* UIView+RSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89E819160218001E9089 /* UIView+RSAdditions.m */; };
+		942E89F019161D77001E9089 /* AlarmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E89EF19161D77001E9089 /* AlarmCell.m */; };
+		942E89FA1917B881001E9089 /* 夜空中最亮的星.caf in Resources */ = {isa = PBXBuildFile; fileRef = 942E89F91917B881001E9089 /* 夜空中最亮的星.caf */; };
+		942E89FC1917B9C1001E9089 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942E89FB1917B9C1001E9089 /* AVFoundation.framework */; };
+		942E8A051917C1D7001E9089 /* SelectMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E8A031917C1D7001E9089 /* SelectMusicViewController.m */; };
+		942E8A061917C1D7001E9089 /* SelectMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942E8A041917C1D7001E9089 /* SelectMusicViewController.xib */; };
+		942E8A0F1917D206001E9089 /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E8A0D1917D206001E9089 /* MusicCell.m */; };
+		942E8A101917D206001E9089 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942E8A0E1917D206001E9089 /* MusicCell.xib */; };
+		942E8A151918C92E001E9089 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942E8A131918C92E001E9089 /* ShakeViewController.m */; };
+		942E8A161918C92E001E9089 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 942E8A141918C92E001E9089 /* ShakeViewController.xib */; };
+		942E8A181918CF82001E9089 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942E8A171918CF82001E9089 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		941D91331905075B00B52795 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 941D910B1905075B00B52795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 941D91121905075B00B52795;
+			remoteInfo = WaverAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		941D91131905075B00B52795 /* WaverAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaverAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		941D91161905075B00B52795 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		941D91181905075B00B52795 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		941D911A1905075B00B52795 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		941D911E1905075B00B52795 /* WaverAlarm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaverAlarm-Info.plist"; sourceTree = "<group>"; };
+		941D91201905075B00B52795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		941D91221905075B00B52795 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		941D91241905075B00B52795 /* WaverAlarm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaverAlarm-Prefix.pch"; sourceTree = "<group>"; };
+		941D91251905075B00B52795 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		941D91261905075B00B52795 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		941D91281905075B00B52795 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		941D912E1905075B00B52795 /* WaverAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaverAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		941D912F1905075B00B52795 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		941D91371905075B00B52795 /* WaverAlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaverAlarmTests-Info.plist"; sourceTree = "<group>"; };
+		941D91391905075B00B52795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		941D913B1905075B00B52795 /* WaverAlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaverAlarmTests.m; sourceTree = "<group>"; };
+		942E89CD191601EE001E9089 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		942E89CE191601EE001E9089 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		942E89CF191601EE001E9089 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		942E89D1191601EE001E9089 /* AlarmSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSettingViewController.h; sourceTree = "<group>"; };
+		942E89D2191601EE001E9089 /* AlarmSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSettingViewController.m; sourceTree = "<group>"; };
+		942E89D3191601EE001E9089 /* AlarmSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSettingViewController.xib; sourceTree = "<group>"; };
+		942E89D5191601EE001E9089 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		942E89D6191601EE001E9089 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		942E89DD191601FF001E9089 /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		942E89DE191601FF001E9089 /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		942E89DF191601FF001E9089 /* CurrentTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentTime.h; sourceTree = "<group>"; };
+		942E89E0191601FF001E9089 /* CurrentTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentTime.m; sourceTree = "<group>"; };
+		942E89E1191601FF001E9089 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		942E89E2191601FF001E9089 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		942E89E719160218001E9089 /* UIView+RSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RSAdditions.h"; sourceTree = "<group>"; };
+		942E89E819160218001E9089 /* UIView+RSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RSAdditions.m"; sourceTree = "<group>"; };
+		942E89EE19161D77001E9089 /* AlarmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmCell.h; sourceTree = "<group>"; };
+		942E89EF19161D77001E9089 /* AlarmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmCell.m; sourceTree = "<group>"; };
+		942E89F91917B881001E9089 /* 夜空中最亮的星.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "夜空中最亮的星.caf"; sourceTree = "<group>"; };
+		942E89FB1917B9C1001E9089 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		942E8A021917C1D7001E9089 /* SelectMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectMusicViewController.h; sourceTree = "<group>"; };
+		942E8A031917C1D7001E9089 /* SelectMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectMusicViewController.m; sourceTree = "<group>"; };
+		942E8A041917C1D7001E9089 /* SelectMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectMusicViewController.xib; sourceTree = "<group>"; };
+		942E8A0C1917D206001E9089 /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
+		942E8A0D1917D206001E9089 /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
+		942E8A0E1917D206001E9089 /* MusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		942E8A121918C92E001E9089 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShakeViewController.h; path = ShakeVC/ShakeViewController.h; sourceTree = "<group>"; };
+		942E8A131918C92E001E9089 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShakeViewController.m; path = ShakeVC/ShakeViewController.m; sourceTree = "<group>"; };
+		942E8A141918C92E001E9089 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShakeViewController.xib; path = ShakeVC/ShakeViewController.xib; sourceTree = "<group>"; };
+		942E8A171918CF82001E9089 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		941D91101905075B00B52795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942E8A181918CF82001E9089 /* CoreMotion.framework in Frameworks */,
+				942E89FC1917B9C1001E9089 /* AVFoundation.framework in Frameworks */,
+				941D91191905075B00B52795 /* CoreGraphics.framework in Frameworks */,
+				941D911B1905075B00B52795 /* UIKit.framework in Frameworks */,
+				941D91171905075B00B52795 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		941D912B1905075B00B52795 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941D91301905075B00B52795 /* XCTest.framework in Frameworks */,
+				941D91321905075B00B52795 /* UIKit.framework in Frameworks */,
+				941D91311905075B00B52795 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		941D910A1905075B00B52795 = {
+			isa = PBXGroup;
+			children = (
+				941D911C1905075B00B52795 /* WaverAlarm */,
+				941D91351905075B00B52795 /* WaverAlarmTests */,
+				941D91151905075B00B52795 /* Frameworks */,
+				941D91141905075B00B52795 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		941D91141905075B00B52795 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941D91131905075B00B52795 /* WaverAlarm.app */,
+				941D912E1905075B00B52795 /* WaverAlarmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		941D91151905075B00B52795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				942E8A171918CF82001E9089 /* CoreMotion.framework */,
+				942E89FB1917B9C1001E9089 /* AVFoundation.framework */,
+				941D91161905075B00B52795 /* Foundation.framework */,
+				941D91181905075B00B52795 /* CoreGraphics.framework */,
+				941D911A1905075B00B52795 /* UIKit.framework */,
+				941D912F1905075B00B52795 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		941D911C1905075B00B52795 /* WaverAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				941D91251905075B00B52795 /* AppDelegate.h */,
+				941D91261905075B00B52795 /* AppDelegate.m */,
+				942E89F81917B881001E9089 /* Resources */,
+				942E89EA19160221001E9089 /* Macro */,
+				942E89E619160218001E9089 /* others */,
+				942E89DC191601FF001E9089 /* Models */,
+				942E89CB191601EE001E9089 /* Sections */,
+				941D91281905075B00B52795 /* Images.xcassets */,
+				941D911D1905075B00B52795 /* Supporting Files */,
+			);
+			path = WaverAlarm;
+			sourceTree = "<group>";
+		};
+		941D911D1905075B00B52795 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				941D911E1905075B00B52795 /* WaverAlarm-Info.plist */,
+				941D911F1905075B00B52795 /* InfoPlist.strings */,
+				941D91221905075B00B52795 /* main.m */,
+				941D91241905075B00B52795 /* WaverAlarm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		941D91351905075B00B52795 /* WaverAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				941D913B1905075B00B52795 /* WaverAlarmTests.m */,
+				941D91361905075B00B52795 /* Supporting Files */,
+			);
+			path = WaverAlarmTests;
+			sourceTree = "<group>";
+		};
+		941D91361905075B00B52795 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				941D91371905075B00B52795 /* WaverAlarmTests-Info.plist */,
+				941D91381905075B00B52795 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		942E89CB191601EE001E9089 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				942E8A111918C8ED001E9089 /* ShakeVC */,
+				942E89CC191601EE001E9089 /* MainVC */,
+				942E89D0191601EE001E9089 /* SettingVC */,
+				942E89D4191601EE001E9089 /* View */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		942E89CC191601EE001E9089 /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				942E89CD191601EE001E9089 /* MainViewController.h */,
+				942E89CE191601EE001E9089 /* MainViewController.m */,
+				942E89CF191601EE001E9089 /* MainViewController.xib */,
+			);
+			path = MainVC;
+			sourceTree = "<group>";
+		};
+		942E89D0191601EE001E9089 /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				942E89D1191601EE001E9089 /* AlarmSettingViewController.h */,
+				942E89D2191601EE001E9089 /* AlarmSettingViewController.m */,
+				942E89D3191601EE001E9089 /* AlarmSettingViewController.xib */,
+				942E8A021917C1D7001E9089 /* SelectMusicViewController.h */,
+				942E8A031917C1D7001E9089 /* SelectMusicViewController.m */,
+				942E8A041917C1D7001E9089 /* SelectMusicViewController.xib */,
+				942E8A0C1917D206001E9089 /* MusicCell.h */,
+				942E8A0D1917D206001E9089 /* MusicCell.m */,
+				942E8A0E1917D206001E9089 /* MusicCell.xib */,
+			);
+			path = SettingVC;
+			sourceTree = "<group>";
+		};
+		942E89D4191601EE001E9089 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				942E89D5191601EE001E9089 /* Button.h */,
+				942E89D6191601EE001E9089 /* Button.m */,
+				942E89EE19161D77001E9089 /* AlarmCell.h */,
+				942E89EF19161D77001E9089 /* AlarmCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		942E89DC191601FF001E9089 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				942E89DD191601FF001E9089 /* Alarm.h */,
+				942E89DE191601FF001E9089 /* Alarm.m */,
+				942E89DF191601FF001E9089 /* CurrentTime.h */,
+				942E89E0191601FF001E9089 /* CurrentTime.m */,
+				942E89E1191601FF001E9089 /* User.h */,
+				942E89E2191601FF001E9089 /* User.m */,
+			);
+			name = Models;
+			path = Sections/Models;
+			sourceTree = "<group>";
+		};
+		942E89E619160218001E9089 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				942E89E719160218001E9089 /* UIView+RSAdditions.h */,
+				942E89E819160218001E9089 /* UIView+RSAdditions.m */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		942E89EA19160221001E9089 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		942E89F81917B881001E9089 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				942E89F91917B881001E9089 /* 夜空中最亮的星.caf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		942E8A111918C8ED001E9089 /* ShakeVC */ = {
+			isa = PBXGroup;
+			children = (
+				942E8A121918C92E001E9089 /* ShakeViewController.h */,
+				942E8A131918C92E001E9089 /* ShakeViewController.m */,
+				942E8A141918C92E001E9089 /* ShakeViewController.xib */,
+			);
+			name = ShakeVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		941D91121905075B00B52795 /* WaverAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941D913F1905075B00B52795 /* Build configuration list for PBXNativeTarget "WaverAlarm" */;
+			buildPhases = (
+				941D910F1905075B00B52795 /* Sources */,
+				941D91101905075B00B52795 /* Frameworks */,
+				941D91111905075B00B52795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaverAlarm;
+			productName = WaverAlarm;
+			productReference = 941D91131905075B00B52795 /* WaverAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		941D912D1905075B00B52795 /* WaverAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941D91421905075B00B52795 /* Build configuration list for PBXNativeTarget "WaverAlarmTests" */;
+			buildPhases = (
+				941D912A1905075B00B52795 /* Sources */,
+				941D912B1905075B00B52795 /* Frameworks */,
+				941D912C1905075B00B52795 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				941D91341905075B00B52795 /* PBXTargetDependency */,
+			);
+			name = WaverAlarmTests;
+			productName = WaverAlarmTests;
+			productReference = 941D912E1905075B00B52795 /* WaverAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		941D910B1905075B00B52795 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ryan;
+				TargetAttributes = {
+					941D91121905075B00B52795 = {
+						DevelopmentTeam = 3QAVW9ZNK9;
+					};
+					941D912D1905075B00B52795 = {
+						TestTargetID = 941D91121905075B00B52795;
+					};
+				};
+			};
+			buildConfigurationList = 941D910E1905075B00B52795 /* Build configuration list for PBXProject "WaverAlarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 941D910A1905075B00B52795;
+			productRefGroup = 941D91141905075B00B52795 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				941D91121905075B00B52795 /* WaverAlarm */,
+				941D912D1905075B00B52795 /* WaverAlarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		941D91111905075B00B52795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941D91211905075B00B52795 /* InfoPlist.strings in Resources */,
+				942E89DA191601EE001E9089 /* AlarmSettingViewController.xib in Resources */,
+				942E8A061917C1D7001E9089 /* SelectMusicViewController.xib in Resources */,
+				942E8A161918C92E001E9089 /* ShakeViewController.xib in Resources */,
+				942E89D8191601EE001E9089 /* MainViewController.xib in Resources */,
+				942E89FA1917B881001E9089 /* 夜空中最亮的星.caf in Resources */,
+				942E8A101917D206001E9089 /* MusicCell.xib in Resources */,
+				941D91291905075B00B52795 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		941D912C1905075B00B52795 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941D913A1905075B00B52795 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		941D910F1905075B00B52795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942E89E5191601FF001E9089 /* User.m in Sources */,
+				942E8A151918C92E001E9089 /* ShakeViewController.m in Sources */,
+				941D91271905075B00B52795 /* AppDelegate.m in Sources */,
+				942E89E919160218001E9089 /* UIView+RSAdditions.m in Sources */,
+				942E89D9191601EE001E9089 /* AlarmSettingViewController.m in Sources */,
+				942E89DB191601EE001E9089 /* Button.m in Sources */,
+				942E89E3191601FF001E9089 /* Alarm.m in Sources */,
+				942E89D7191601EE001E9089 /* MainViewController.m in Sources */,
+				941D91231905075B00B52795 /* main.m in Sources */,
+				942E89E4191601FF001E9089 /* CurrentTime.m in Sources */,
+				942E89F019161D77001E9089 /* AlarmCell.m in Sources */,
+				942E8A051917C1D7001E9089 /* SelectMusicViewController.m in Sources */,
+				942E8A0F1917D206001E9089 /* MusicCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		941D912A1905075B00B52795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941D913C1905075B00B52795 /* WaverAlarmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		941D91341905075B00B52795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 941D91121905075B00B52795 /* WaverAlarm */;
+			targetProxy = 941D91331905075B00B52795 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		941D911F1905075B00B52795 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				941D91201905075B00B52795 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		941D91381905075B00B52795 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				941D91391905075B00B52795 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		941D913D1905075B00B52795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		941D913E1905075B00B52795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		941D91401905075B00B52795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaverAlarm/WaverAlarm-Prefix.pch";
+				INFOPLIST_FILE = "WaverAlarm/WaverAlarm-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "648FFE75-7917-408F-81B0-CA92093995EF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		941D91411905075B00B52795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaverAlarm/WaverAlarm-Prefix.pch";
+				INFOPLIST_FILE = "WaverAlarm/WaverAlarm-Info.plist";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "648FFE75-7917-408F-81B0-CA92093995EF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		941D91431905075B00B52795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaverAlarm.app/WaverAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaverAlarm/WaverAlarm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WaverAlarmTests/WaverAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		941D91441905075B00B52795 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaverAlarm.app/WaverAlarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaverAlarm/WaverAlarm-Prefix.pch";
+				INFOPLIST_FILE = "WaverAlarmTests/WaverAlarmTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		941D910E1905075B00B52795 /* Build configuration list for PBXProject "WaverAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941D913D1905075B00B52795 /* Debug */,
+				941D913E1905075B00B52795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941D913F1905075B00B52795 /* Build configuration list for PBXNativeTarget "WaverAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941D91401905075B00B52795 /* Debug */,
+				941D91411905075B00B52795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941D91421905075B00B52795 /* Build configuration list for PBXNativeTarget "WaverAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				941D91431905075B00B52795 /* Debug */,
+				941D91441905075B00B52795 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 941D910B1905075B00B52795 /* Project object */;
+}

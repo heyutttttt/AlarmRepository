@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlarmSettingViewController">
+            <connections>
+                <outlet property="background" destination="ywm-0y-7Ev" id="pC8-Wf-7PY"/>
+                <outlet property="background4s" destination="624-f1-2ID" id="HY3-hC-QSK"/>
+                <outlet property="cancelButton" destination="uWv-uY-nOC" id="Z22-Jx-HG8"/>
+                <outlet property="deleteButton" destination="0U9-RV-V5A" id="I9Q-yz-gf4"/>
+                <outlet property="fixButton" destination="G2o-jJ-FOI" id="MUI-ap-bRk"/>
+                <outlet property="friButton" destination="VGz-f8-qf6" id="6ST-PX-xF3"/>
+                <outlet property="hourButton" destination="0a7-D8-8l4" id="FrU-Wa-MI1"/>
+                <outlet property="minButton" destination="0YA-2A-Ch2" id="nVG-r3-pfO"/>
+                <outlet property="minDotsView" destination="8w1-02-dp6" id="GGA-ie-Ph9"/>
+                <outlet property="minDotsView4s" destination="Q9V-xJ-iqm" id="2iM-86-mYk"/>
+                <outlet property="monButton" destination="TjQ-1F-exL" id="3db-JP-fbZ"/>
+                <outlet property="musicButton" destination="nGD-bi-tF6" id="JAM-gL-aoU"/>
+                <outlet property="musicLabel" destination="oJD-th-n1x" id="4XC-q9-dt5"/>
+                <outlet property="satButton" destination="yt5-0N-isa" id="VbX-yc-eRc"/>
+                <outlet property="settingTimeLable" destination="BSc-FW-UgN" id="ekE-Q8-0eZ"/>
+                <outlet property="stopButton" destination="Kum-Xg-pdo" id="UYE-yS-Hi0"/>
+                <outlet property="sunButton" destination="0b1-Y3-9pc" id="x4r-Kc-FtU"/>
+                <outlet property="sunLightsView" destination="zi8-pS-qQQ" id="1EE-NN-W5z"/>
+                <outlet property="thuButton" destination="Jhe-a4-wvH" id="n1T-JM-Yd7"/>
+                <outlet property="tueButton" destination="gje-mt-fK5" id="OYC-lw-CcD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wedButton" destination="muA-6R-mkK" id="2Nc-OT-0bx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setPerMin" id="ywm-0y-7Ev">
+                    <rect key="frame" x="-50" y="-50" width="420" height="668"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0a7-D8-8l4" userLabel="hourButton">
+                    <rect key="frame" x="108" y="259" width="60" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="40"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectTimeUnit:" destination="-1" eventType="touchUpInside" id="M6w-Wf-HpW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0YA-2A-Ch2" userLabel="minButton">
+                    <rect key="frame" x="163" y="259" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="40"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectTimeUnit:" destination="-1" eventType="touchUpInside" id="cj5-bW-V3a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uWv-uY-nOC">
+                    <rect key="frame" x="380" y="14" width="73" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="25"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showPresentingVC:" destination="-1" eventType="touchUpInside" id="sOU-CF-kK6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G2o-jJ-FOI">
+                    <rect key="frame" x="380" y="14" width="73" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="25"/>
+                    <state key="normal" title="确定">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fixAlarm:" destination="-1" eventType="touchUpInside" id="fz7-01-QZQ"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minDots" id="8w1-02-dp6">
+                    <rect key="frame" x="34" y="159" width="251" height="251"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oJD-th-n1x">
+                    <rect key="frame" x="380" y="440" width="54" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0b1-Y3-9pc" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="39" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="SUN">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="5ym-t7-aZr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TjQ-1F-exL" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="49" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="MON">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="8Wb-fw-eJn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gje-mt-fK5" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="35" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="TUE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="buJ-fl-wre"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="muA-6R-mkK" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="44" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="WED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="rGz-LV-7eu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Jhe-a4-wvH" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="35" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="THU">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="Gby-wJ-pfa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VGz-f8-qf6" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="26" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="FRI">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="dWA-iH-aY3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yt5-0N-isa" customClass="Button">
+                    <rect key="frame" x="380" y="492" width="33" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="19"/>
+                    <state key="normal" title="SAT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectDays:" destination="-1" eventType="touchUpInside" id="gxh-rz-w70"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BSc-FW-UgN" userLabel="SettingTimeLabel">
+                    <rect key="frame" x="380" y="90" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kum-Xg-pdo" userLabel="stopButton">
+                    <rect key="frame" x="380" y="522" width="73" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                    <state key="normal" title="停止">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickStopButton:" destination="-1" eventType="touchUpInside" id="6Hy-7O-Tuw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0U9-RV-V5A" userLabel="deleteButton">
+                    <rect key="frame" x="380" y="522" width="73" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                    <state key="normal" title="删除">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickDeleteButton:" destination="-1" eventType="touchUpInside" id="LkG-vc-fSH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nGD-bi-tF6" userLabel="MusicButton">
+                    <rect key="frame" x="380" y="444" width="210" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="24"/>
+                    <state key="normal" title="夜空中最亮的星">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickMusicButton:" destination="-1" eventType="touchUpInside" id="oNR-xy-sWz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setPerMin4s" id="624-f1-2ID" userLabel="background4s - setPerMin4s">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindots4s" id="Q9V-xJ-iqm">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunLights" id="zi8-pS-qQQ">
+            <rect key="frame" x="0.0" y="0.0" width="39" height="39"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+    </objects>
+    <resources>
+        <image name="minDots" width="250" height="251"/>
+        <image name="mindots4s" width="198" height="198"/>
+        <image name="setPerMin" width="420" height="668"/>
+        <image name="setPerMin4s" width="320" height="480"/>
+        <image name="sunLights" width="39" height="39"/>
+    </resources>
+</document>
