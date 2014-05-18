@@ -16,6 +16,9 @@
     NSString *currentAlarmID;
     MainViewController *mainVC;
     AVAudioPlayer *audioPlayer;
+    UIAlertView *alarmAlert;
+    
+    BOOL isAnotherAlarm;
 }
 @property (strong, nonatomic) UIWindow *window;
 

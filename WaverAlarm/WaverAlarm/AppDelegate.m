@@ -56,16 +56,18 @@
 
 - (void)showShakeVC
 {
-    [self playSong];
-    
-    [self showAlertView];
-    
+    if (isAnotherAlarm)
+    {
+        [self playSong];
+        
+        [self showAlertView];
+    }
 }
 
 - (void)showAlertView
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"不小睡就要开始摇了" delegate:self cancelButtonTitle:@"小睡" otherButtonTitles:@"取消", nil];
-    [alert show];
+    alarmAlert = [[UIAlertView alloc] initWithTitle:nil message:@"不小睡就要开始摇了" delegate:self cancelButtonTitle:@"小睡" otherButtonTitles:@"取消", nil];
+    [alarmAlert show];
 }
 
 - (void)showMainVC
@@ -96,6 +98,7 @@
         //xiaoshui
         [audioPlayer stop];
         [[User shareInstance] setAdAlarmByID:currentAlarmID WithNap:YES];
+        currentAlarmID = nil;
     }
 }
 
@@ -103,8 +106,16 @@
 {
     application.applicationIconBadgeNumber -= 1;
     
-    currentAlarmID = [notification.userInfo objectForKey:ALARMID];
-    NSLog(@"%@",currentAlarmID);
+    if (![currentAlarmID isEqualToString:[notification.userInfo objectForKey:ALARMID]])
+    {
+        currentAlarmID = [notification.userInfo objectForKey:ALARMID];
+        isAnotherAlarm = YES;
+    }
+    
+    else
+    {
+        isAnotherAlarm = NO;
+    }
     
     [self showShakeVC];
 }

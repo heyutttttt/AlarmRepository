@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0251C23D-61B4-4703-ADBE-C00C62241E55</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WaverAlarm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D46779C7-FC74-4B95-993A-454DF2710B25</key>
+		<string>https://github.com/heyutttttt/AlarmRepository.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WaverAlarm/WaverAlarm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D46779C7-FC74-4B95-993A-454DF2710B25</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/heyutttttt/AlarmRepository.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D46779C7-FC74-4B95-993A-454DF2710B25</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D46779C7-FC74-4B95-993A-454DF2710B25</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AlarmRepository</string>
+		</dict>
+	</array>
+</dict>
+</plist>

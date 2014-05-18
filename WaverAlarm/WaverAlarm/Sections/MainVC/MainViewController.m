@@ -147,7 +147,15 @@
     
     else
     {
-        hour = [NSString stringWithFormat:@"%d:",currentTime.currentHours];
+        if ([minButton.titleLabel.text isEqualToString:@"59"] && currentTime.currentMins == 0)
+        {
+             hour = [NSString stringWithFormat:@"%d:",currentTime.currentHours + 1];
+        }
+        
+        else
+        {
+            hour = [NSString stringWithFormat:@"%d:",currentTime.currentHours];
+        }
     }
     
     [hourButton setTitle:hour forState:UIControlStateNormal];

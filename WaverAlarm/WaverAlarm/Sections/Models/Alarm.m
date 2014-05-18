@@ -124,7 +124,7 @@
     {
         for (UILocalNotification *notification in self.localNotifications)
         {
-            if (!notification)
+            if (notification)
             {
                 [[UIApplication sharedApplication] cancelLocalNotification:notification];
             }
@@ -147,6 +147,7 @@
 
     
     NSDictionary *infoDic = [[NSDictionary alloc] initWithObjectsAndKeys:[alarmDate description],@"date", self.alarmID,ALARMID,nil];
+    
     localNotification.userInfo = infoDic;
     
     localNotification.applicationIconBadgeNumber += 1; //设置app图标右上角的数字

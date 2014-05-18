@@ -65,6 +65,7 @@
 - (void)setAdAlarmByID:(NSString *)ID WithNap:(BOOL)isNap
 {
     [self loadData];
+    
     if (![self isAlarmsEmpty])
     {
         for (Alarm *alarm in allAlarms)
@@ -74,7 +75,10 @@
                 [alarm setAdditionalAlarmWithNap:isNap];
             }
         }
+        
+        [self saveData];
     }
+    
 }
 
 - (void)resetAlarmNotifications
